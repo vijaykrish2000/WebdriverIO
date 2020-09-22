@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600401605477' stop='1600401629063'>
+    <name>Verification of Fresh Works Home Page UI Elements</name>
+    <title>Verification of Fresh Works Home Page UI Elements</title>
+    <test-cases>
+        <test-case start='1600401605478' status='passed' stop='1600401616801'>
+            <name>Launcing Home Page </name>
+            <title>Launcing Home Page </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-85.0.4183.102'/>
+            </parameters>
+            <steps>
+                <step start='1600401605491' status='passed' stop='1600401616786'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='42718dcf-fd43-4647-8888-b36fbbe07b55-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1600401616815' status='broken' stop='1600401628958'>
+            <name>verify Is Header Text Displaed ? </name>
+            <title>verify Is Header Text Displaed ? </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-85.0.4183.102'/>
+            </parameters>
+            <steps>
+                <step start='1600401617534' status='passed' stop='1600401622716'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='b7bed6f8-1d29-4620-b23c-12f3abb16208-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600401622735' status='passed' stop='1600401628955'>
+                    <name>takeScreenshot</name>
+                    <title>takeScreenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='dcae7d92-2fa7-4b9c-90ab-5de76cdd96d4-attachment.png' type='image/png' size='893908'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'getText' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'getText' of undefined
+                    at Context.&lt;anonymous> (C:\webdriverdemo\test\testhomepage.js:11:46)
+                    at Context.executeSync (C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:80:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

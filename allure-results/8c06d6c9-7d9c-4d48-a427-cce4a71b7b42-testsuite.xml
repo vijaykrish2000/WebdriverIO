@@ -1,0 +1,160 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600402688642' stop='1600402705082'>
+    <name>Verification of Fresh Works Home Page UI Elements</name>
+    <title>Verification of Fresh Works Home Page UI Elements</title>
+    <test-cases>
+        <test-case start='1600402688643' status='broken' stop='1600402705080'>
+            <name>verification of Home Page Verification ? </name>
+            <title>verification of Home Page Verification ? </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-85.0.4183.102'/>
+            </parameters>
+            <steps>
+                <step start='1600402688655' status='passed' stop='1600402700295'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='8e52460f-8ec4-441a-b5a9-ae94ff552ba0-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700313' status='passed' stop='1600402700349'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='e97b7225-fab3-4b23-9175-171fef518d22-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='9fbf13cc-27aa-4865-bad2-196e96465a61-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700377' status='passed' stop='1600402700500'>
+                    <name>getElementText</name>
+                    <title>getElementText</title>
+                    <attachments>
+                        <attachment title='Request' source='08ed4234-3177-4fea-8c07-d4af5cbfc941-attachment.json' type='application/json' size='30'/>
+                        <attachment title='Response' source='805bdde6-4b1b-4006-971b-e7b5fb0ec9df-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700514' status='passed' stop='1600402700523'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='4d2d0f79-3b1a-46d1-aadc-4d822668bc45-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='f010b9ee-53b0-4b74-ba16-b176c11e7f2e-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700542' status='passed' stop='1600402700578'>
+                    <name>getElementText</name>
+                    <title>getElementText</title>
+                    <attachments>
+                        <attachment title='Request' source='8b914828-c217-40cb-9754-04b8201c29f6-attachment.json' type='application/json' size='30'/>
+                        <attachment title='Response' source='f022d46f-cbef-4141-b114-343557c70b89-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700584' status='passed' stop='1600402700601'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='ed676f4b-2155-4949-ad6a-35c2eac0bb28-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='aa045477-b791-4936-86c2-1e775460374c-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700609' status='passed' stop='1600402700636'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='dc119f3c-9cdd-49e7-a99d-3b81d074d123-attachment.json' type='application/json' size='5252'/>
+                        <attachment title='Response' source='e5fe054e-c074-4d61-a51d-860eb751d3e2-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700649' status='passed' stop='1600402700661'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='84f1e487-c21c-4ca9-b70f-179ad1ad2fd2-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='20697e2f-5b8f-41d2-a0b8-dba8f4d056e0-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700670' status='passed' stop='1600402700687'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='adc34727-06e8-470b-a4f6-284009ab414e-attachment.json' type='application/json' size='5252'/>
+                        <attachment title='Response' source='f3f3af01-9dd7-4d21-b1ed-baf8da2dfbb8-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700694' status='passed' stop='1600402700798'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='26a18de2-aab2-41c7-86d8-f7a11b411356-attachment.json' type='application/json' size='120'/>
+                        <attachment title='Response' source='048bc95b-8dff-413e-b6b2-ec262eae4a8e-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700806' status='passed' stop='1600402700832'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='8689497a-90ce-421a-a19d-d97390f32699-attachment.json' type='application/json' size='120'/>
+                        <attachment title='Response' source='ddd9e00f-43a1-417e-af84-f1305612ff57-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600402700839' status='broken' stop='1600402705079'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='f96bdf67-ac8f-4636-ad1c-dcf51907bcef-attachment.json' type='application/json' size='84'/>
+                    </attachments>
+                    <steps>
+                        <step start='1600402700883' status='passed' stop='1600402705076'>
+                            <name>takeScreenshot</name>
+                            <title>takeScreenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='06040155-b516-4432-9170-f89041f4908b-attachment.png' type='image/png' size='901755'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '&lt;span class="nav-label">Company&lt;/span>' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33</message>
+                <stack-trace>Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '&lt;span class="nav-label">Company&lt;/span>' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33
+                Error: Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '&lt;span class="nav-label">Company&lt;/span>' is not a valid selector.
+                    at ExecutionContext._evaluateInternal (C:\webdriverdemo\node_modules\puppeteer-core\lib\cjs\puppeteer\common\ExecutionContext.js:217:19)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async ElementHandle.evaluateHandle (C:\webdriverdemo\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:100:16)
+                    at async ElementHandle.$ (C:\webdriverdemo\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:605:24)
+                    at async DOMWorld.$ (C:\webdriverdemo\node_modules\puppeteer-core\lib\cjs\puppeteer\common\DOMWorld.js:83:23)
+                    at async DevToolsDriver.findElement (C:\webdriverdemo\node_modules\devtools\build\utils.js:102:66)
+                    at async Browser.wrappedCommand (C:\webdriverdemo\node_modules\devtools\build\devtoolsdriver.js:92:18)
+                    at async Browser.$ (C:\webdriverdemo\node_modules\webdriverio\build\commands\browser\$.js:19:15)
+                    at async Browser.runCommandWithHooks (C:\webdriverdemo\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Browser.runCommandWithHooks (C:\webdriverdemo\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Browser.wrapCommandFn (C:\webdriverdemo\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at global.$ (C:\webdriverdemo\node_modules\@wdio\runner\build\index.js:187:36)
+                    at HomePage.get companyLnk [as companyLnk] (C:\webdriverdemo\pages\homepage.js:20:16)
+                    at Context.&lt;anonymous> (C:\webdriverdemo\test\testhomepage.js:13:30)
+                    at Context.executeSync (C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:80:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

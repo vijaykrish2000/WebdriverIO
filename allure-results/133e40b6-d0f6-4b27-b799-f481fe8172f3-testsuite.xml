@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600406086481' stop='1600406108935'>
+    <name>Verification of menu items in blaze page</name>
+    <title>Verification of menu items in blaze page</title>
+    <test-cases>
+        <test-case start='1600406086482' status='broken' stop='1600406108931'>
+            <name>Display all Li items</name>
+            <title>Display all Li items</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-85.0.4183.102'/>
+            </parameters>
+            <steps>
+                <step start='1600406086502' status='passed' stop='1600406097552'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='e0dfebdf-a24c-4b65-a698-dbffd62a5a3e-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600406098576' status='passed' stop='1600406108926'>
+                    <name>takeScreenshot</name>
+                    <title>takeScreenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='fb44fc07-40a1-4ed9-a98f-da222ca4a463-attachment.png' type='image/png' size='1380058'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.parent.$$ is not a function</message>
+                <stack-trace>TypeError: this.parent.$$ is not a function
+                    at BlazePage.get childElements [as childElements] (C:\webdriverdemo\pages\blazemeter.js:9:28)
+                    at BlazePage.get getTextForLi [as getTextForLi] (C:\webdriverdemo\pages\blazemeter.js:13:21)
+                    at Context.&lt;anonymous> (C:\webdriverdemo\test\testblazepage.js:9:18)
+                    at Context.executeSync (C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:80:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

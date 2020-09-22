@@ -1,0 +1,28 @@
+{
+  "name": "webdriverdemo",
+  "version": "1.0.0",
+  "description": "This is demo webdriverio Sep 16 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+
+  },
+  "author": "Vijay Krishna",
+  "license": "ISC",
+  "devDependencies": {
+    "@rpii/wdio-html-reporter": "^6.1.1",
+    "@wdio/allure-reporter": "^6.4.7",
+    "@wdio/local-runner": "^6.5.0",
+    "@wdio/mocha-framework": "^6.5.0",
+    "@wdio/selenium-standalone-service": "^6.4.7",
+    "@wdio/spec-reporter": "^6.4.7",
+    "@wdio/sync": "^6.5.0",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0",
+    "webdriver": "^6.5.0"
+  },
+  "dependencies": {
+    "@wdio/cli": "^6.5.0",
+    "local-runner": "^0.1.1-alpha"
+  }
+}

@@ -1,0 +1,88 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600372588140' stop='1600372614121'>
+    <name>interaction with web element</name>
+    <title>interaction with web element</title>
+    <test-cases>
+        <test-case start='1600372588141' status='broken' stop='1600372613933'>
+            <name>enter value in a field</name>
+            <title>enter value in a field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-85.0.4183.102'/>
+            </parameters>
+            <steps>
+                <step start='1600372588178' status='passed' stop='1600372594963'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='0161cec1-d139-43ed-9f53-c10629c7b951-attachment.json' type='application/json' size='38'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600372595555' status='passed' stop='1600372596123'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='fd6081b1-edf3-4106-8e7e-74c9f435bafb-attachment.json' type='application/json' size='64'/>
+                        <attachment title='Response' source='7e408f72-f7ac-4dda-acf2-929a2fa02e1b-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600372596151' status='passed' stop='1600372596253'>
+                    <name>elementClear</name>
+                    <title>elementClear</title>
+                    <attachments>
+                        <attachment title='Request' source='035c346d-a0b4-4c85-b4f8-e90e4e213516-attachment.json' type='application/json' size='30'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600372596260' status='passed' stop='1600372596986'>
+                    <name>elementSendKeys</name>
+                    <title>elementSendKeys</title>
+                    <attachments>
+                        <attachment title='Request' source='e1b400f5-13aa-4fbb-97f4-ab5546e3f074-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600372601991' status='passed' stop='1600372602007'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='98adfb17-b194-4fe3-8680-aac45277baa7-attachment.json' type='application/json' size='73'/>
+                        <attachment title='Response' source='7ac44d5e-0789-428b-b835-a8479dda0384-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600372602013' status='passed' stop='1600372602067'>
+                    <name>getElementText</name>
+                    <title>getElementText</title>
+                    <attachments>
+                        <attachment title='Request' source='2ec23692-3556-4ada-8630-3f9a036cf497-attachment.json' type='application/json' size='30'/>
+                        <attachment title='Response' source='160d1d70-b99e-4b34-b00b-862125d331bf-attachment.json' type='application/json' size='51'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1600372602072' status='passed' stop='1600372613919'>
+                    <name>takeScreenshot</name>
+                    <title>takeScreenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='55198efe-a213-4682-849d-dc6c620269da-attachment.png' type='image/png' size='3998948'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>varText is not defined</message>
+                <stack-trace>ReferenceError: varText is not defined
+                    at Context.&lt;anonymous> (C:\webdriverdemo\test\demotest.js:11:21)
+                    at Context.executeSync (C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\webdriverdemo\node_modules\@wdio\sync\build\index.js:80:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
