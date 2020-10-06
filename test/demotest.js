@@ -125,72 +125,82 @@ describe("interaction with web element", function(){
     
     // add User function Start
 
-    // it("click Connection Tab",function(){
-    //     const myConnectionTab = $('//*[@id="MyConnections"]/div');
-    //     let myConnectionLabel = myConnectionTab.getText();
-    //     myConnectionTab.click();
+    it("click Connection Tab",function(){
+        const myConnectionTab = $('//*[@id="MyConnections"]/div');
+        let myConnectionLabel = myConnectionTab.getText();
+        myConnectionTab.click();
        
-    // })
-    // it("click Add connection",function(){
-    //     const addIcon = $('//*[@id="Invite"]/span/img');
-    //     console.log("add Icon Element isDisplayed::"+addIcon.isDisplayed())
-    //     addIcon.click();
+    })
+    it("click Add connection",function(){
+        const addIcon = $('//*[@id="Invite"]/span/img');
+        console.log("add Icon Element isDisplayed::"+addIcon.isDisplayed())
+        addIcon.click();
+        browser.pause(1000);
       
-    // });
-    // it("click next Button",function(){
-    //     // popup dispalying
-    //     const nextButton = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[5]/div/span/span');    
-    //     nextButton.click();
+    });
+    it("click next Button",function(){
+        // popup dispalying
+        const nextButton = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[5]/div/span/span');    
+        nextButton.click();
+        browser.pause(1000);
       
-    // }) 
-    // it("Enter the user details",function(){
-    //     const inviteEmail = $('//*[@id="InviteEmail:"]');
-    //     inviteEmail.setValue('uiautomationtestuser@yopmail.com');
-    //     browser.pause(500);
-    //     const firstName = $('//*[@id="FirstName:"]');
-    //     firstName.setValue('firstName'); 
-    //     browser.pause(500);
-    //     const LastName = $('//*[@id="LastName:"]');
-    //     LastName.setValue('lastName'); 
-    //     browser.pause(500);
-    //     const next = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[7]/div')
-    //     next.click();
-    //     browser.pause(5000);
+    }) 
+    it("Enter the user details",function(){
+        const inviteEmail = $('//*[@id="InviteEmail:"]');
+        inviteEmail.setValue('uiautomationtestuser40@yopmail.com'); // value should change for each execution
+        browser.pause(500);
+        const firstName = $('//*[@id="FirstName:"]');
+        firstName.setValue('firstName'); 
+        browser.pause(500);
+        const LastName = $('//*[@id="LastName:"]');
+        LastName.setValue('lastName'); 
+        browser.pause(500);
+        const next = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[7]/div')
+        next.click();
+        browser.pause(5000);
       
-    // })  
+    })  
 
-    // it("Select team",function(){
+    it("Select team",function(){
        
-    //     //radiobutton
-    //     // this value is changing to dynamic and getting error
-    //     const initialTeam = $('#gwt-uid-43')
-    //     console.log("add initialTeam Element isDisplayed"+initialTeam.isDisplayed())
-    //     initialTeam.click();
-    //     browser.pause(1000);
-    //     const next = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[7]/div') 
-    //     console.log("next Button Display:::"+next.isDisplayed());
-    //     next.click();
+        //radiobutton
+        // this value is changing to dynamic and getting error so gave full path
+        const initialTeam = $('/html/body/div[3]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div[1]/table/tbody/tr[3]/td/div/span/input')
+        console.log("add initialTeam Element isDisplayed"+initialTeam.isDisplayed())
+        initialTeam.click();
+        browser.pause(1000);
+        const next = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[7]/div') 
+        console.log("next Button Display:::"+next.isDisplayed());
+        next.click();
         
       
-    // })
-    // it("Click invite",function(){
-    //     browser.pause(1000);
-    //     const invite =$('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[7]/div');
-    //     console.log("Invite Button Display:::"+invite.isDisplayed());
-    //     invite.click();
-    //     browser.pause(1000);
-    //      const ok =$('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div')
-    //      browser.pause(1000);
-    // })
+    })
+    it("Click invite",function(){
+        browser.pause(1000);
+        const invite =$('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[7]/div');
+        console.log("Invite Button Display:::"+invite.isDisplayed());
+        invite.click();
+        browser.pause(10000);
+        const ok = $('/html/body/div[3]/div[5]/div/div/div[5]/div/div/div[3]/div/div/div[3]'); 
+        console.log("Ok Buton:::"+ok.isDisplayed());
+          ok.click();
+         browser.pause(3000);
+         browser.saveScreenshot('reports/html-reports/screenshots/ok.png');
 
+    })
+
+ 
      // add User function End
 
-    // smart libraries function Start
+    //smart libraries function Start
+    
     it("click smart libraries tab",function(){
+        browser.pause(3000);
         const smartLibrariesTab = $('//*[@id="SmartLibraries"]/div');
         let smartLibrariesTabLabel = smartLibrariesTab.getText();
         smartLibrariesTab.click();
-        browser.pause(1000);
+        browser.pause(3000);
+        browser.saveScreenshot('reports/html-reports/screenshots/smarttab.png');
     });
     it("click Add smartLibraties",function(){
         const addIcon = $('//*[@id="Add Smart Library"]/span/img');
@@ -202,19 +212,19 @@ describe("interaction with web element", function(){
     //Details tab start
     it("open the details tab",function(){
         const detailsTab = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/div')
+        console.log("details tab display::"+detailsTab.isDisplayed());
         detailsTab.click();
         browser.pause(500);
-        //browser.saveScreenshot('reports/html-reports/screenshots/detailstab.png');
+        browser.saveScreenshot('reports/html-reports/screenshots/detailstab.png');
     })
     it("Enter Title",function(){
         const title = $('//*[@id="Title:"]')
-        title.setValue('UiAutomation Title15');
+        title.setValue('UiAutomation Title40');// value should change for each execution
          browser.pause(500);
          const description = $('//*[@id="Description:"]')
-         description.setValue('UiAutomation Description15');
-          browser.pause(1000);
-          //browser.saveScreenshot('reports/html-reports/screenshots/enterdetails.png');
-      
+         description.setValue('UiAutomation Description40');// value should change for each execution
+          browser.pause(1000);  
+          browser.saveScreenshot('reports/html-reports/screenshots/detailab1.png');
     });
     it("Click Upload Type", function(){
        
@@ -225,11 +235,9 @@ describe("interaction with web element", function(){
     })
     it("click save Titles",function(){
         browser.pause(5000);
-       // browser.saveScreenshot('reports/html-reports/screenshots/save.png');
         const save = $('//*[@id="Save"]');
-        save.click();
-        
-         
+        save.click();  
+        browser.saveScreenshot('reports/html-reports/screenshots/detailab2.png');       
     });
     //Details tab End
     //content tab Start
@@ -238,103 +246,147 @@ describe("interaction with web element", function(){
         browser.pause(3000);
         const content = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/table/tbody/tr/td[2]/div')
         console.log("content tab disaly::"+content.isDisplayed());
-        content.click();
-       
-       // browser.saveScreenshot('reports/html-reports/screenshots/contenttab.png');
-       
+        content.click();    
     }) 
 
     it("Add content icon",function(){
          browser.pause(1000);
         const addIcon = $('//*[@id="Add Smart Library Content"]/span/img') 
         addIcon.click()
-       
-       
-    })
-    it("upload dummy",function(){
         browser.pause(2000);
         const fileUpload = $('//*[@id="drop-area"]/div/div/div/div[3]/div/div/div/div/div[3]/form/div/input[2]');
-        fileUpload.setValue("C:\\Vijay\\butterfly.jpg")
+        fileUpload.setValue("D:\\myInteract\\logo.PNG")
         browser.pause(5000);
-       
-    })
-    // it("upload file",function(){
-    //     const path = require('path');
-    //     const fileUpload = $('//*[@id="drop-area"]/div/div/div/div[3]/div/div/div/div/div[3]/form/div/input[2]');
-    //     console.log("file buoad button visible"+fileUpload.isDisplayed())
-    //     const filePath = path.join('documents', 'logo.PNG');
-    //     console.log(filePath)
-    //     fileUpload.setValue(filePath);
-    //     browser.pause(5000);
-        
-    // })
-    it("save file",function(){
         const save = $('//*[@id="Save"]')
-         save.click()
+        save.click()
+        browser.pause(8000);
+    })
+   //content tab end
+    // folder & order tab start
+    it("Open folder tab",function(){
+    
+        const folderTab = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/table/tbody/tr/td[3]/div');
+        console.log("folder header Display::;"+folderTab.isDisplayed());
+        folderTab.click();
+        browser.pause(2000);
+        const folderAddIcon = $('//*[@id="Create New Folder"]');
+        console.log("create new foleder icon visible::::"+folderAddIcon.isDisplayed())
+        folderAddIcon.click();
+        browser.pause(2000);
+        const folderName = $('//*[@id="FolderName:"]')
+        folderName.setValue("uiAutomation FOlder");
+        browser.pause(2000);
+        const folderSave = $('//*[@id="Save"]');
+        console.log("Folder save button display:::"+folderSave.isDisplayed())
+        folderSave.click();
          browser.pause(5000);
     })
-    //content tab Start
-    // upto this ok////***************** */
-
-    //folder creation tab start
-    it("click folderOrderings tab",function(){
-        browser.pause(3000);
-       
-        const folder = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/table/tbody/tr/td[3]/div')
-        console.log("folder tab disaly::"+folder.isDisplayed());
-        folder.click();
-        
-    }) 
-    it("Create folder icon",function(){
-        
-       const addFolderIcon = $('//*[@id="Create New Folder"]') 
-       console.log("folder icon:::"+addFolderIcon.isDisplayed());
-       addFolderIcon.click()
-       browser.pause(1000);
-   })
-   it("Enter folder name",function(){
-    browser.pause(1000);
-    const folderName = $('//*[@id="FolderName:"]');
-    folderName.setValue("Ui Automation Test");
-    browser.pause(500);
-   })
-   it("save file",function(){
-    const save = $('//*[@id="Save"]')
-     save.click()
-     browser.pause(5000);
+    it("Re Open to MyInteract", function(){
+        const assign = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/table/tbody/tr/td[4]');
+        console.log("Assign tab dispalay:::"+assign.isDisplayed());
+        assign.click();
+        browser.pause(2000);
+        const addAssign = $('//*[@id="Add Smart Library Assignment"]/span/img');
+        console.log("add assignment button  dispalay:::"+addAssign.isDisplayed());
+        addAssign.click();
+        browser.pause(8000);
+        const dropdownBtn = $('//*[@id="ROOT-2521314-window-overlays"]/div[8]/div/div/div[5]/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[2]/div')
+        dropdownBtn.click();
+        browser.pause(5000);
+        const dropdownValue = $('//*[@id="VAADIN_COMBOBOX_OPTIONLIST"]/div/div[2]/table/tbody/tr[5]/td')
+        dropdownValue.click();
+        browser.pause(2000);
+        const uploader = $('/html/body/div[3]/div[8]/div/div/div[5]/div/div/div/div[1]/div/div[2]/div/div[5]/div/div[1]/div/span/input');
+        uploader.click();
+        browser.pause(5000);
+        const assignmentSave = $('//*[@id="Save"]')
+        console.log("save assignment button  dispalay:::"+assignmentSave.isDisplayed());
+        assignmentSave.click();
+        browser.pause(10000);
+        const cancel =$('//*[@id="Cancel"]');
+        cancel.click();
+        browser.pause(2000);
+        const myInteractLink = $('//*[@id="myINTERACT"]/img')
+        myInteractLink.click();
+        browser.pause(2000);
     })
-    //folder creation tab end
-   // assignment tab start 
-//    it("click assignment tab",function(){
-//     browser.pause(3000);
-//     const folder = $('//*[@id="ROOT-2521314-window-overlays"]/div[5]/div/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/table/tbody/tr/td[4]/div')
-//     console.log("assignment tab disaly::"+folder.isDisplayed());
-//     folder.click();
-//     browser.pause(1000);
-//    })
-//    it("click assignment icon",function(){
-//     browser.pause(1000);
-//    const addIcon = $('//*[@id="Add Smart Library Assignment"]') 
-//    addIcon.click()
-//    browser.pause(1000);
-//     });
-//     it("select the drop down value", function(){
-//         const dropDownValue = $('//*[@id="gwt-uid-247"]')
-//         dropDownValue.setValue("ID: 34072 NAME firstName lastName EMAIL: uiautomationtest1@yopmail.com");
-//         browser.pause(500);
-//     });
-//     it("Select Uploader radio button",function(){
-//         const uploader = $('//*[@id="gwt-uid-249"]')
-//         uploader.click();
-//         browser.pause(500);
-//     });
-//     it("save file",function(){
-//         const save = $('//*[@id="Save"]')
-//          save.click()
-//          browser.pause(5000);
-//         });
-
-   // assignment tab start 
+   
+    // Click My Asset Start
+    it("opepn My Asset",function(){
+        const assetTab = $('//*[@id="MyAssets"]/div');
+        assetTab.click();
+        browser.pause(1000);
+        const addbtn = $('//*[@id="Add"]');
+        addbtn.click();
+        browser.pause(2000);
+    })
+    it("Enter Asset details",function(){
+        const tileHeader = $('//*[@id="TileHeader:"]');
+        tileHeader.setValue("Test Header");
+        browser.pause(1000);
+        const tileBody = $('//*[@id="TileBody:"]')
+        tileBody.setValue("Test Body");
+        browser.pause(1000);
+        const product = $('//*[@id="Product/Category:"]/div');
+        product.click();
+        browser.pause(1000);
+        const productValue = $('//*[@id="VAADIN_COMBOBOX_OPTIONLIST"]/div/div[2]/table/tbody/tr/td');
+        productValue.click();
+        browser.pause(1000);
+        const assetType = $('//*[@id="AssetType:"]/div');
+        assetType.click();
+        browser.pause(1000);
+        const assetTypeValue = $('//*[@id="VAADIN_COMBOBOX_OPTIONLIST"]/div/div[2]/table/tbody/tr[8]/td');
+        assetTypeValue.click();
+        browser.pause(1000);
+       browser.saveScreenshot('reports/html-reports/screenshots/screenshot1.png');
+    
+    })
+   it('Enter Asset version',function(){
+    const uploadAssetVersion = $('//*[@id="uploadAssetVersionButton"]');
+    uploadAssetVersion.click();
+    browser.pause(1000);
+    const smartLibrary = $('//*[@id="SmartLibrary"]')
+    smartLibrary.click();
+    browser.pause(1000);
+    const chooseSmartLib = $('//*[@id="SmartLibrary:"]/div');
+    chooseSmartLib.click();
+    browser.pause(2000);
+    const chooseSmartLibValue = $('//*[@id="VAADIN_COMBOBOX_OPTIONLIST"]/div/div[2]/table/tbody/tr[10]/td');
+    chooseSmartLibValue.click();
+    browser.pause(2000);
+    const chooseSmartLibNext = $('//*[@id="Next"]')
+    chooseSmartLibNext.click();
+    browser.pause(1000);
+    const customiseNext = $('//*[@id="Next"]');
+    customiseNext.click();
+    browser.pause(1000);
+    const finish = $('//*[@id="Finish"]');
+    finish.click();
+    browser.pause(1000);
+    browser.saveScreenshot('reports/html-reports/screenshots/screenshot2.png');
+   })
+   it('Select Tile Image',function(){
+    const selectTileFromGallery = $('//*[@id="selectTitleFromGalleryButton"]');
+    selectTileFromGallery.click();
+    browser.pause(5000);
+    const clickImge = $('//*[@id="image-BussinessPartnersLookingAtChartTouchpad.jpg"]');
+    clickImge.click();
+    browser.pause(1000);
+    const selectImage = $('//*[@id="SelectTileImage"]');
+    selectImage.click();
+    browser.saveScreenshot('reports/html-reports/screenshots/screenshot3.png');
+    
+   });
+   it('save Asset details',function(){
+    const saveAssetDetails = $('//*[@id="Save"]');
+    saveAssetDetails.click();
+    browser.pause(5000);
+    browser.saveScreenshot('reports/html-reports/screenshots/screenshot4.png');
+   })
+   // Click My Asset end
+    
+ 
 
 });
 //https://test-my.interact.technology/interact/#/login
