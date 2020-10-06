@@ -4,8 +4,9 @@
   "description": "This is demo webdriverio Sep 16 2020",
   "main": "index.js",
   "scripts": {
-    "test": "wdio wdio.conf.js"
-
+    "smoke": "wdio wdio.smoke.conf.js",
+    "regression": "wdio wdio.conf.js",
+    "progression": "wdio wdio.progression.conf.js"
   },
   "author": "Vijay Krishna",
   "license": "ISC",
@@ -23,6 +24,8 @@
   },
   "dependencies": {
     "@wdio/cli": "^6.5.0",
+    "fs-extra": "^9.0.1",
+    "source-map-support": "^0.5.19",
     "local-runner": "^0.1.1-alpha"
   }
 }
